@@ -1,5 +1,5 @@
 {
-  "name": "wine-wizard",
+  "name": "mvc-blog",
   "version": "1.0.0",
   "description": "UCLA Bootcamp Project 2",
   "main": "server.js",
