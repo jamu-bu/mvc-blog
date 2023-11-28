@@ -1,0 +1,27 @@
+[
+    {
+        "post_name": "How to become a front end dev",
+        "author_id": 1,
+        "post_content": "study art for 20 years, watch graphic design tiktoks, and learn css, js, html, react"
+    },
+    {
+        "post_name": "Cooking Tip 1",
+        "author_id": 2,
+        "post_content": "A little sugar will bring out the salt!"
+    },
+    {
+        "post_name": "How to be a cat",
+        "author_id": 3,
+        "post_content": "meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow"
+    },
+    {
+        "post_name": "Who let the dogs out?",
+        "author_id": 3,
+        "post_content": "woof woof woof"
+    },
+    {
+        "post_name": "Software Engineering for Kids!",
+        "author_id": 2,
+        "post_content": "teleport back in time 20 years ago and start then"
+    }
+]

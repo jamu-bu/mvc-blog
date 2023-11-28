@@ -1,0 +1,14 @@
+<section id="blogpost">
+
+    <div id="blogpost-content">
+        <p>Edit Title</p>
+        <textarea id="edit-post-title">{{blogPost.post_name}}</textarea>
+        <br>
+        <p>Edit Content</p>
+        <textarea id="edit-post-content" rows="10">{{blogPost.post_content}}</textarea>
+        <button id="update-button" data-id="{{blogPost.id}}">UPDATE</button>
+        <button id="delete-button">DELETE</button>
+    </div>
+
+</section>
+<script src="/js/editPost.js"></script>

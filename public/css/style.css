@@ -1,0 +1,204 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Button Styles */
+
+#submit-button, 
+.form-group button, 
+#update-button, 
+#delete-button,
+#new-post-button,
+#submit-post-button {
+    padding: 10px;
+    width: 100px;
+    background-color: #A1C7FF;
+    color: white;
+    border: none;
+}
+
+#submit-button:hover, 
+.form-group button:hover, 
+#update-button:hover, 
+#delete-button:hover,
+#new-post-button:hover,
+#submit-post-button:hover  {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: black;
+}
+
+/* Header & Footer Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A1C7FF;
+    color: white;
+    padding: 40px;
+}
+
+nav h1 {
+    font-size: 250%;
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 120%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-size: 130%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A1C7FF;
+    color: white;
+    padding: 20px;
+    font-size: 80%;
+    margin-top: auto;
+}
+
+/* Front Page Styles */
+
+#blog-post {
+    margin: 40px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#blog-post a {
+    text-decoration: none;
+    color: black;
+}
+
+#blog-post a:hover {
+    cursor: pointer;
+}
+
+#post-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    align-items: end;
+}
+
+#post-header p {
+    margin-left: 5px;
+}
+
+#post-preview {
+    margin-top: 20px;
+}
+
+.read-more {
+    margin-top: 10px;
+    text-align: right;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.read-more:hover {
+    color: #A1C7FF;
+}
+
+/* Blog Post Page Styles */
+
+#blogpost {
+    margin: 20px;
+}
+
+#blogpost-heading, #comments {
+    margin: 40px;
+}
+
+#blogpost-content {
+    margin: 60px;
+}
+
+#comment-box {
+    padding: 10px;
+    border-bottom: 1px lightgrey solid;
+    margin: 10px 0;
+}
+
+#comment-box h3, #comment-box p {
+    margin-top: 10px;
+}
+
+#add-comment-form {
+    width: 100%;
+    text-align: center;
+}
+
+#add-comment {
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+textarea {
+    width: 100%;
+}
+
+#new-post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Login/Signup Page Styles */
+
+#forms {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#login, #signup {
+    border: 1px solid lightgrey;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.form-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group label {
+    margin-right: 10px;
+}

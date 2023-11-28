@@ -1,0 +1,41 @@
+<section id="blogpost">
+    <div id="blogpost-heading">
+        <h1>{{blogPost.post_name}}</h1>
+        <p>Posted by {{blogPost.user.name}} on {{format_date blogPost.date_created}}</p>
+        <hr>
+    </div>
+
+    <div id="blogpost-content">
+        <p>{{blogPost.post_content}}</p>
+    </div>
+
+    <div id="comments">
+        <h2>Comments</h2>
+        {{#if comments.length}}
+        {{#each comments as |comment|}}
+            <div id="comment-box">
+                <h3>{{comment.user.name}}</h3>
+                <h6>{{format_date comment.date_created}}</h6>
+                <p>{{comment.comment_content}}</p>
+            </div>
+        {{/each}}
+        {{else}}
+        <p>no comments...</p>
+        {{/if}}
+    </div>
+
+    <div id="add-comment-form">
+        <h3>Submit a Comment!</h3>
+        <br>
+        {{#if logged_in}}
+        <form id="add-comment" data-id="{{blogPost.id}}">
+            <label for="id">Add your comment:</label>
+            <textarea id="comment" name="comment" rows="6" maxlength="255" placeholder="Write your comment here..." required></textarea>
+            <input id="submit-button" type="submit"/>
+        </form>
+        {{else}}
+        <p>You must <a href="/login">log in</a> to comment</p>
+        {{/if}}
+    </div>
+<script src="/js/submitComment.js"></script>
+</section>
